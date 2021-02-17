@@ -21,7 +21,7 @@ export const getUsuario = (req: Request, res: Response) => {
 
 export const postUsuario = (req: Request, res: Response) => {
 
-    const {body} = req.params;
+    const {body} = req;
 
     res.json({
         msg: 'postUsuario',
@@ -33,7 +33,7 @@ export const postUsuario = (req: Request, res: Response) => {
 export const putUsuario = (req: Request, res: Response) => {
 
     const {id} = req.params;
-    const {body} = req.params;
+    const {body} = req;
 
     res.json({
         msg: 'putUsuario',

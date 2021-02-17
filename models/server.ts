@@ -12,8 +12,9 @@ export default class Server {
     constructor(){
         this.app = express();
         this.port = process.env.PORT || '8000';
+        
+        // MÉTODOS INICIALES
         this.middlewares();
-        //Definir mis rutas
         this.routes();
     }
 
@@ -23,6 +24,7 @@ export default class Server {
         //LECTURA DEL BODY
         this.app.use(express.json());
         //CARPETA PÚBLICA
+        this.app.use(express.static('public'))
     }
 
     routes(){
