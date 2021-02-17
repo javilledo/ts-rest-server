@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/javilledo/ts-rest-server/issues"
   },
-  "homepage": "https://github.com/javilledo/ts-rest-server#readme"
+  "homepage": "https://github.com/javilledo/ts-rest-server#readme",
+  "devDependencies": {
+    "tslint": "^6.1.3"
+  }
 }
